@@ -1,0 +1,21 @@
+<!-- <div class="prod" >
+    <div *ngFor="let item of db" >
+        <app-item [itemFromParent]="item"></app-item>
+        </div>
+<div style="font-size:x-large; background-color: olivedrab; " >Shoping thoi nao </div>
+ 
+<p>
+    <img src="../../../assets/img/ca-sau-gai-1_1420381358.jpg">
+</p>
+<p>
+    <img src="../../../assets/img/gau-bong-cho-poodle-14.jpg">
+</p>
+<p>
+    <img src="../../../assets/img/meo bong.jpg">
+</p>
+</div> -->
+
+<div style="font-size:large; background-color: hotpink; " >Shoping thôi nào  </div>
+ 
+
+<app-item *ngFor = "let item of db" [item] = "item"></app-item>

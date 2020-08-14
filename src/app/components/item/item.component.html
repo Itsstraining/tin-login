@@ -1,0 +1,8 @@
+<div class="container" *ngIf="item != null">
+    Name: {{item.getname()}},
+    Price: {{item.getprice()}},
+    Quantity:{{item.getquantity()}},
+    <img src="{{item.getimg()}}" style="width: 300px;height: 300px;">
+    <button (click)="item.setquantity(item.getquantity() -1)">-</button>
+    <button (click)="item.setquantity(item.getquantity() +1)">+</button>
+</div>
